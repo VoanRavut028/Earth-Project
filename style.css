@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --color-black: #333;
+  --color-white: #fff;
+  --color-green: #198754;
+}
+::selection {
+  background-color: var(--color-green);
+}
+.navbar-brand {
+  color: var(--color-black);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.navbar-nav .nav-link {
+  color: var(--color-green);
+  font-weight: 600;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--color-black);
+}
+
+.home-page {
+  background-image: url(../Picture/bg.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.home-page h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-weight: 700;
+  color: var(--color-green);
+}
+.home-page p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  word-spacing: 30px;
+  color: var(--color-black);
+}
+.btn-explore {
+  width: 15rem;
+  letter-spacing: 6px;
+  padding: 12px;
+}
+
+/* == */
+
+.card .card-body .card-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.card .card-body .card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* == */
+.about-us .text-hd-about {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.about-us .text-p-about {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 1.3rem;
+}
+/* == */
+.talk-us {
+  background-image: url(../Picture/bg2.avif);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & .title-talk-us {
+    color: var(--color-green);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: 700;
+  }
+  & .p-talk-us {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: 400;
+    width: 700px;
+  }
+  .btn-get {
+    width: 15rem;
+    letter-spacing: 4px;
+    padding: 12px;
+    text-transform: uppercase;
+  }
+}
+/* == */
+.footer .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.footer .navbar-nav .nav-link {
+  color: var(--color-black);
+}
+.footer .footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer .footer-earth {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+.footer .footer-p {
+  font-size: 1.2rem;
+}
+
+/* == */
+.text-p-service {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 1rem;
+}
+.text-hd-service {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.contact-item {
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  & .contact-item-text .text-1 {
+    font-size: 1rem;
+  }
+  & .contact-item-text .text-2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+.contact-item i {
+  border-radius: 50%;
+  border: 1px solid var(--color-green);
+  padding: 15px;
+}
+.follow-section-icon .follow-icon i {
+  color: var(--color-green);
+  font-size: 1.7rem;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+.follow-section-icon .follow-icon i:hover {
+  color: #024813;
+}
+
+/* === */
+@media (max-width: 576px) {
+  .home-page h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: 700;
+    color: var(--color-green);
+  }
+  .home-page p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    word-spacing: 30px;
+    color: var(--color-black);
+  }
+  .navbar-brand {
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+  .talk-us .p-talk-us {
+    color: var(--color-white);
+    font-size: 0.8rem;
+    padding: 1rem;
+    font-weight: 400;
+    width: auto;
+  }
+}
